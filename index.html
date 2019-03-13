@@ -1,0 +1,17 @@
+---
+title: J. Andrew Crain
+---
+<div class="recent-posts">
+  <ul class="post-preview-list">
+    {% for post in site.posts limit:5 %}
+    <li class="post-preview-list-item">
+      <a class="post-preview-list-item-title" href="{{ post.url }}">{{ post.title }}</a>
+      <div class="post-preview-list-item-date">{{ post.date | date: '%B %d, %Y' }}</div>
+      {{ post.excerpt }}
+      <a class="post-preview-list-item-link" href="{{ post.url }}">Read more...</a>
+    </li>
+    {% endfor %}
+  </ul>
+</div>
+
+<a href="/list">See all articles</a>

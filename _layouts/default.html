@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+<!--<link rel="icon" type="image/png" href="/assets/icons/favicon.png">-->
+    {% seo %}
+  </head>
+  <body>
+
+    <header class="site-header" role="banner">
+      <div class="site-title-box">
+	<div class="wrapper">
+	  <a class="site-title" href="/">{{ site.title }}</a>
+	  <div class="site-subtitle">
+	    Software developer and computer scientist
+	  </div>
+	</div>
+      </div>
+      <nav class="site-nav">
+	<div class="wrapper">
+	  <ul>
+	    <li><a href="/list">Articles</a></li>
+	    <li><a href="/about">About</a></li>
+	    <li><a href="https://twitter.com/j_andrewcrain">Twitter</a></li>
+	  </ul>
+	</div>
+      </nav>
+    </header>
+    
+    <main class="page-content">
+      <div class="wrapper">
+	{{ content }}
+      </div>
+    </main>
+
+    <footer>
+      <div class="wrapper">
+	<ul>
+	  <li><a href="/privacy">Privacy</a></li>
+	  <li><a href="/contact">Contact</a></li>
+	  <li><a href="https://www.carpequeso.com">Math Blog</a></li>
+	</ul>
+	<div class="search-wrapper">
+	  <form id="SiteSearch" role="search" action="https://duckduckgo.com/">
+	    <input type="text" name="q" placeholder="Search...">
+	    <input type="hidden" name="sites" value="j.andrewcrain.com">
+	  </form>
+	</div>
+	<div class="copyright">
+	  Copyright J. Andrew Crain © 2019
+	</div>
+      </div>
+    </footer>
+
+  </body>
+</html>

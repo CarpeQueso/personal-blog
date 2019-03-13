@@ -1,0 +1,11 @@
+---
+title: Articles
+---
+<ul class="archive-list">
+  {% for post in site.posts %}
+  <li class="archive-list-item">
+    <a class="archive-list-item-title" href="{{ post.url }}">{{ post.title }}</a>
+    <div class="archive-list-item-date">{{ post.date | date: '%B %d, %Y' }}</div>
+  </li>
+  {% endfor %}
+</ul>

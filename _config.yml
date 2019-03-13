@@ -1,14 +1,32 @@
 title: J. Andrew Crain
-email: me@j.andrewcrain.com
+email: contact@j.andrewcrain.com
 description: >-
-  J. Andrew Crain site description
-baseurl: "" # the subpath of your site, e.g. /blog
+  Software developer and computer scientist.
+baseurl: ""
 url: "https://j.andrewcrain.com" 
 lang: en_US
 twitter:
   username: j_andrewcrain
   card: summary
 
+permalink: /:title/
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: J. Andrew Crain
+
+# Build settings
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
