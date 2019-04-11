@@ -282,6 +282,23 @@ a:hover {
     }
 }
 
+.page-title {
+    font-weight: 300;
+    letter-spacing: -1px;
+    font-size: 36px;
+
+    margin: 0;
+    margin-bottom: 8px;
+
+    @media(min-width: $min-width-tablet) {
+    }
+
+    @media(min-width: $min-width-computer) {
+	font-size: 52px;
+	margin-bottom: 16px;
+    }
+}
+
 .post {
 
     @media(min-width: $min-width-tablet) {
