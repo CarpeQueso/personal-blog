@@ -535,3 +535,22 @@ footer {
     @media(min-width: $min-width-computer) {
     }
 }
+
+img.headshot {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+
+    @media(min-width: $min-width-tablet) {
+	width: 125px;
+	height: 125px;
+	float: left;
+	margin: 0;
+	margin-right: 20px;
+    }
+
+    @media(min-width: $min-width-computer) {
+    }
+}
